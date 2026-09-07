@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>문현종 (Hyunjong Moon) — Cloud-Native Security Engineer</title>
+<meta name="description" content="문현종 (heizelnet) — Cloud-Native Security Engineer. eBPF 기반 암호화 관측성·민첩성, 클라우드 보안 감사 자동화, 컨테이너·5G 보안 연구 경력의 보안 엔지니어 프로필입니다.">
+<meta name="author" content="Hyunjong Moon">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="문현종 (Hyunjong Moon) — Cloud-Native Security Engineer">
+<meta property="og:description" content="eBPF 기반 암호화 관측성·민첩성, 클라우드 보안 감사 자동화, 컨테이너·5G 보안 연구.">
+<meta property="og:url" content="https://heizelnet.github.io/">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://heizelnet.github.io/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-gh" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></symbol>
+  <symbol id="i-li" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.64h.05A4.17 4.17 0 0 1 17.6 8.7c3.9 0 4.62 2.5 4.62 5.76V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.19 1.46-2.19 2.97V21h-4V9Z"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.24.19 2.24.19v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.45 2.89h-2.33v6.99A10 10 0 0 0 22 12Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M3 6.5h18v11H3zM3 7l9 6 9-6"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m8 6-5 6 5 6M16 6l5 6-5 6"/></symbol>
+  <symbol id="i-commit" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 12h5M17 12h5"/><circle cx="12" cy="12" r="3.2"/></g></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M14 3H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7l-4-4Zm0 0v4h4M9 12h6M9 16h6"/></symbol>
+  <symbol id="i-badge" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M12 3l2.4 1.6 2.9-.2.9 2.8 2.3 1.8-1.3 2.6 1.3 2.6-2.3 1.8-.9 2.8-2.9-.2L12 21l-2.4-1.6-2.9.2-.9-2.8L3.5 15l1.3-2.6L3.5 9.8l2.3-1.8.9-2.8 2.9.2z"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v1a4 4 0 0 0 3 3.9M17 6h3v1a4 4 0 0 1-3 3.9M9 20h6M12 14v6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="m5 12.5 4.5 4.5L19 7"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M12 3a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3ZM5 11a7 7 0 0 0 14 0M12 18v3"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></symbol>
+  <symbol id="i-print" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M7 9V4h10v5M7 18H5a1 1 0 0 1-1-1v-6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1h-2M7 14h10v6H7z"/></symbol>
+</svg>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <span class="brand">Heizelnet</span>
+    <nav class="tnav">
+      <a href="#summary">Summary</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#activities">Activities</a>
+      <a href="#awards">Awards</a>
+    </nav>
+    <div class="tools">
+      <button class="iconbtn" id="theme" title="테마 전환" aria-label="테마 전환"><svg class="ic"><use href="#i-moon"/></svg></button>
+      <button class="iconbtn" id="print" title="PDF로 저장" aria-label="PDF로 저장"><svg class="ic"><use href="#i-print"/></svg></button>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+<article class="sheet">
+
+  <header class="sheet-head">
+    <div class="head-row">
+      <div class="avatar">HM</div>
+      <div class="who">
+        <h1>문현종</h1>
+        <div class="role">Cloud-Native Security Engineer</div>
+        <div class="tagline">eBPF와 커널 관측 기술로 클라우드 인프라의 암호화 상태를 들여다보고, 서비스를 멈추지 않고 바꾸는 시스템을 만듭니다.</div>
+      </div>
+      <ul class="links">
+        <li><a href="https://www.linkedin.com/in/heizelnet" target="_blank" rel="noopener"><span class="sq"><svg class="ic"><use href="#i-li"/></svg></span>linkedin.com/in/heizelnet</a></li>
+        <li><a href="https://github.com/heizelnet" target="_blank" rel="noopener"><span class="sq"><svg class="ic"><use href="#i-gh"/></svg></span>github.com/heizelnet</a></li>
+        <li><a href="https://www.facebook.com/hazelnutcookie" target="_blank" rel="noopener"><span class="sq"><svg class="ic"><use href="#i-fb"/></svg></span>facebook.com/hazelnutcookie</a></li>
+        <li><a href="#" class="mailto" data-u="heizelnet" data-d="gmail.com"><span class="sq"><svg class="ic"><use href="#i-mail"/></svg></span><span class="mailtxt">이메일 보기</span></a></li>
+      </ul>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>2014 —</b><span>Career</span></div>
+      <div class="stat"><b>5</b><span>Organizations</span></div>
+      <div class="stat"><b>8</b><span>Publications</span></div>
+      <div class="stat"><b>5</b><span>Invited Talks</span></div>
+      <div class="stat"><b>15</b><span>Projects</span></div>
+    </div>
+  </header>
+
+  <div class="sheet-body">
+
+    <section class="sec summary" id="summary">
+      <h2>Career Summary</h2>
+      <p>I am a cloud-native security engineer who reads what running systems actually do, and changes them without taking them down. My path ran from offensive research — container escape chains, Windows privilege escalation, mobile reverse engineering — into building the systems that detect and prevent what that research found. Having built those escapes myself is what still decides which signals are worth collecting and which controls are worth enforcing.</p>
+      <p>My work has taken three forms: automated assessment of cloud accounts against compliance and least-privilege baselines, kernel-level observability built on eBPF, and runtime reconfiguration of cryptographic behavior without downtime. Each had to work against production systems that could not be modified or restarted just to be measured, and each was put to use on financial-sector audits and live breach investigations. Sitting on both sides — writing the checks and then using them under incident pressure — is what taught me which findings an operations team will actually act on.</p>
+      <p>I am drawn to cryptography for the same reason: it is the rare part of the stack that has to be replaced while it is running, and post-quantum migration will make that every infrastructure team's problem. I want that transition to be observable and reversible rather than a one-way rewrite. Whether the target is a Kubernetes cluster, a cloud account, or a 5G core, I build tools that tell an operator something true and then let them act on it safely.</p>
+    </section>
+
+    <div class="cols">
+    <main>
+
+      <section class="sec" id="experience">
+        <h2>Professional Experience</h2>
+        <div class="tl">
+
+          <article class="tl-item now">
+            <div class="org">
+              <h3><a href="https://boanlab.com" target="_blank" rel="noopener">단국대학교 대학원 <small>인공지능융합학과 · BoanLab</small></a></h3>
+              <span class="team">연구원</span>
+            </div>
+            <div class="when">2024. 04. – Present <span class="badge">현재</span></div>
+            <p class="intro">BoanLab(네트워크 시스템 및 보안 연구실)은 클라우드 컴퓨팅 환경의 시스템·네트워크·데이터 보안을 연구하며, eBPF 기반 커널 관측·제어를 공통 기반으로 삼습니다. 주요 연구 분야는 컨테이너 런타임 보안, DevSecOps 공격 표면 축소, 고성능 클라우드 인프라, 클라우드 암호 민첩성이며, 이 중 쿠버네티스 보안과 컨테이너 네트워크 보안, 암호 민첩성을 중심으로 연구를 수행하고 있습니다.</p>
+            <ul class="bl">
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt">클라우드 보안 솔루션 고도화 방안 연구 및 개발</span></span>
+              </li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt">eBPF 기반 실시간 클라우드 암호화 자산 식별 시스템 개발 (CryptoNexus)</span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>에이전트·코드 수정 없이 운영 중 워크로드의 암호 사용 현황 실시간 수집</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>TLS 1.0·SSL 3.0 등 폐기 대상 알고리즘 및 PQC 미적용 서비스 식별</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>암호 자산 목록(CBOM) 기반 CNSA 2.0·PCI DSS 4.0 대응 및 PQC 전환 우선순위 산출</li>
+                </ul>
+              </li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt">클라우드 데이터 플레인 암호 구현체 무중단 전환 시스템 개발 (CryptoFlex)</span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>워크로드별 정책으로 CipherSuite·키 교환·서명 알고리즘 실시간 지정</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>PQC(ML-KEM·ML-DSA) 전환을 서비스 중단 없이 적용, 실패 시 자동 롤백</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>OpenSSL·BoringSSL·AWS-LC 등 취약 라이브러리 교체 및 FIPS 140-3 분리</li>
+                </ul>
+              </li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt"><a href="https://sites.google.com/boanlab.com/lab/publication/domestic-publication" target="_blank" rel="noopener">멀티 클라우드 서비스 연결 기법 비교 분석 및 고도화 방안 연구</a></span></span>
+              </li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt">5G Core 인프라 제어평면 보안 점검 프레임워크 개발 (TELEscope)</span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>취약점 점검 시나리오를 템플릿으로 인벤토리화하여 점검 자동화</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>NF 토폴로지 자동 수집 기반 5G 코어 점검 대상 선정 및 시나리오 확장</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>악성 NF 주입·코어 서비스 중단·가입자 인증키(K·OPc) 노출 확인</li>
+                </ul>
+              </li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt"><a href="https://di0zxmb8pwajl.cloudfront.net/kiisc/conference/mobisec2024/P-71.pdf" target="_blank" rel="noopener">eBPF 기반 실시간 SSH 세션 이상 탐지 기법 연구 (Mitra)</a></span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>시스템 로그에 의존하지 않고 커널 수준에서 세션 행위를 실시간 탐지</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>브루트포스·은닉 접속(ssh -T)·로그 변조 탐지</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>MobiSec 2024 Best Paper Award</li>
+                </ul>
+              </li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt"><a href="https://koreascience.kr/article/JAKO202426857778614.page" target="_blank" rel="noopener">쿠버네티스 컨테이너 네트워크 보안성 분석</a></span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>주요 CNI(Flannel·Calico·Cilium)의 패킷 처리 기반 설계 비교</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>암호화 지원·네트워크 정책·공격 차단·자체 방어 관점의 보안 기능 분석</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>iptables 기반과 eBPF 기반 CNI의 격리 수준 및 측면 이동 위험 비교</li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+
+          <article class="tl-item">
+            <div class="org">
+              <h3><a href="https://s2w.inc/" target="_blank" rel="noopener">S2W Inc. <small>(주)에스투더블유</small></a></h3>
+              <span class="team">위협분석센터 수석연구원</span>
+            </div>
+            <div class="when">2021. 09. – 2024. 03.</div>
+            <p class="intro">S2W는 다크웹·딥웹·텔레그램 등 폐쇄 채널의 데이터를 수집·분석해 위협 행위자를 추적하고, 공격표면 관리(ASM)와 위협 인텔리전스를 통합한 CTI 플랫폼을 기업·수사기관에 제공하는 기업입니다. 위협분석센터에서 클라우드 보안 영역을 담당하여 AWS·GCP 대상 CSPM·CIEM 솔루션을 기획·개발하고 컨테이너·쿠버네티스 취약점을 분석했으며, 이를 바탕으로 금융권 정보보호 감사와 고객사 침해사고 대응을 수행했습니다.</p>
+            <ul class="bl">
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt">AWS·GCP 클라우드 보안 형상 관리(CSPM) 솔루션 기획 및 개발</span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>AWS 70개 리소스 623개 항목, GCP 24개 리소스 297개 항목 점검 체계 정의</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>Prowler·CloudSploit·TrendMicro·FSBP 기준 교차 분석 후 판정·조치 기준 수립</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>금융권 내부망 반입 제약을 고려해 의존성 최소화 구조로 설계</li>
+                </ul>
+              </li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt">AWS·GCP 클라우드 인프라 권한 관리(CIEM) 점검 기능 개발</span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>AWS IAM 권한 과부여·권한상승 경로·권한경계 미흡 시나리오 기반 점검</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>Policy Sentry·IAMActionHunter 분석 기반 과다 권한 판정 로직 설계</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>GCP Policy Analyzer 기반 권한 분석 기능 확장 설계 및 최소 권한 조치 제공</li>
+                </ul>
+              </li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt">클라우드 보안 점검 기준 및 위협 모델링 문서화</span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>리소스 간 신뢰 경계와 위협 행위자 도출 기반 위협 모델링 작성</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>AWS·Google Cloud 아키텍처 Best Practice 재도식화로 점검 기준 통일</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>아키텍처 유형별 주요 리소스의 보안 고려 요소 및 점검 절차 문서화</li>
+                </ul>
+              </li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt">Terraform 기반 AWS·GCP 공격 시뮬레이션 테스트베드 구축</span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>Stratus Red Team 시나리오 기반 AWS 침해 재현 환경 IaC 구성</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>GCP 아키텍처 센터 기준 취약 구성 포함 모의 서비스 인프라 IaC 구성</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>두 환경에서 점검 항목 탐지 정확도 검증 및 회귀 테스트 수행</li>
+                </ul>
+              </li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt">신한금융그룹 정보보호 감사 — 클라우드 보안 아키텍처 담당</span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>그룹사 클라우드 아키텍처(AWS·NHN) 및 CI/CD 인프라 보안 아키텍처 감사</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>CTI 기반 그룹사 인프라의 외부 노출 공격표면 도출 및 위험도 전달</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>자사 CSPM·CIEM 솔루션을 그룹사 점검에 투입해 취약 구성·과다 권한 도출</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>그룹 표준 클라우드 보안 체크리스트 제작 지원 및 미포함 항목 보완 가이드 작성</li>
+                </ul>
+              </li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt"><a href="https://medium.com/s2wblog/detailed-analysis-of-clouddon-cloud-data-breach-of-korea-e-commerce-company-948c3a5df90d" target="_blank" rel="noopener">이커머스·금융권 클라우드 인프라 침해사고 분석 및 대응</a></span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>CTI 기반 외부 노출 공격표면·유출 크리덴셜 추적으로 최초 침입 경로 규명</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>CloudTrail·CloudWatch의 API 호출·IAM·User Agent 분석으로 추가 침투 시도 추적</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>자사 CSPM 솔루션 재점검으로 취약 구성·IAM 권한경계 미흡 도출 후 대책 전달</li>
+                </ul>
+              </li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt">랜섬웨어 침해사고 분석 및 대응</span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>CTI 기반 랜섬웨어 그룹의 공격표면 및 최초 침입 경로 분석</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>랜섬웨어의 AD 도메인 컨트롤러 장악·Task Scheduler 악용 등 주요 행위 분석</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>민감 데이터 유출 범위 및 감염 확산 범위 파악 후 조치 방안 전달</li>
+                </ul>
+              </li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt">클라우드 공격표면 관리(ASM) 방법론 연구 및 CTI 플랫폼 Quaxar 기획</span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>외부 노출 버킷·DevOps 인프라 등 클라우드 공격표면 탐색 및 자산 귀속 판별</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>공격표면과 유출 크리덴셜을 연계해 공격자의 예상 침투 경로 산출</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>경로별 도달 가능 자산 기준 위험도 점수화 및 우선 조치 대상 제시</li>
+                </ul>
+              </li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt">컨테이너·쿠버네티스 1-day 취약점 분석 및 공격 시나리오 산출</span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>Docker·Kubernetes·CI/CD·메시지큐 대상 신규 취약점 분석 및 악용 여부 조사</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>컨테이너 이스케이프 이후 post-exploitation 및 측면 이동 경로 연구</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>OSINT 목적 컨테이너 메타데이터 크롤러(Docker Hub·Git) 개발</li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+
+          <article class="tl-item">
+            <div class="org">
+              <h3>시큐놀로지랩 <small>(유)시큐놀로지랩</small></h3>
+              <span class="team">R&amp;D 센터 선임연구원</span>
+            </div>
+            <div class="when">2020. 02. – 2021. 08.</div>
+            <p class="intro">R&amp;D 센터에서 공격자 관점의 취약점 연구를 담당했습니다. 컨테이너·퍼블릭 클라우드 인프라의 침투 경로와 Windows 로컬 권한상승 취약점을 분석하고, 그 결과를 보안 모듈 개발과 교육 자료 제작으로 연결했습니다.</p>
+            <ul class="bl">
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt"><a href="https://youtu.be/HzODqCbDq6c" target="_blank" rel="noopener">컨테이너 1-day 취약점 체이닝 연구 — 쿠버네티스 컨트롤 플레인 장악 시연</a></span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>CVE-2020-15257·CVE-2020-8559 연계로 컨테이너 탈출 후 클러스터 장악 재현</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>Host namespace 부여 설정에서 발생하는 컨테이너 탈출 경로 분석</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>연계 악용 가능성과 위험도 평가 후 대응 방안 도출</li>
+                </ul>
+              </li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt">퍼블릭 클라우드·컨테이너 인프라 모의침투 시나리오 연구</span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>CloudGoat·Kubernetes Goat 기반 실제 클라우드 사고 시나리오 재현</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>IAM 권한상승 경로 및 데이터 탈취 가능성 분석</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>기존 시나리오 분석을 통한 신규 침투 시나리오 산출</li>
+                </ul>
+              </li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt">Windows 로컬 권한상승 1-day 취약점 연구 및 보안 모듈 개발</span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>COM 인스턴스 Logical Bug 기반 Administrator 권한 탈취 경로 분석</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>분석 결과를 반영한 핫픽스 모듈 개발</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>UAC 우회 및 안티바이러스 탐지 우회 기법 연구</li>
+                </ul>
+              </li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg><span class="li-head"><span class="li-txt">Windows 환경 쿠버네티스 구축·보안 가이드 강의 자료 작성</span></span>
+                <ul class="bl2">
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>Minikube·Kubespray의 Windows 노드 미지원 문제 해결 방안 정리</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>Hyper-V 기반 Windows 노드 구성 절차 문서화</li>
+                  <li><svg class="ic bi"><use href="#i-commit"/></svg>쿠버네티스 보안 기능 및 설정 방법 가이드 작성</li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+
+          <article class="tl-item">
+            <div class="org">
+              <h3>군 복무 <small>정보통신 분야 · 예비역 중사</small></h3>
+              <span class="team">부사관</span>
+            </div>
+            <div class="when">2015. 11. – 2019. 11.</div>
+            <ul class="bl">
+              <li><svg class="ic bi"><use href="#i-code"/></svg>보안 통신 애플리케이션 및 시스템 개발</li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg>Android·Windows 애플리케이션 개발 및 메신저 난독화 방안 연구</li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg>Android·Windows 시스템 리버스 엔지니어링 및 구조 분석</li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg>모바일 기기 및 Windows 시스템 디지털 포렌식, 자료 복원</li>
+            </ul>
+          </article>
+
+          <article class="tl-item">
+            <div class="org">
+              <h3>엠텍시스템즈</h3>
+              <span class="team">개발팀 사원</span>
+            </div>
+            <div class="when">2014. 01. – 2014. 06.</div>
+            <ul class="bl">
+              <li><svg class="ic bi"><use href="#i-code"/></svg>노키아 코리아 T map 자동경로 안내 시스템 제작 참여</li>
+              <li><svg class="ic bi"><use href="#i-code"/></svg>T map 지도 데이터 제작 프로젝트 참여</li>
+            </ul>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="sec" id="projects">
+        <h2>Projects</h2>
+        <div class="cards">
+
+          <div class="card">
+            <h4>CryptoNexus <small style="font-weight:400;color:var(--meta)">/ CalChas</small></h4>
+            <div class="cmeta">단국대 BoanLab · 2025. 11 – 2026. 08 · 기여도 100%</div>
+            <p>eBPF 기반 실시간 암호화 이벤트 관측 시스템. 컨테이너·호스트 구분 없이 In-Transit / At-Rest 암호화를 포착하고, PQC 알고리즘까지 식별합니다.</p>
+            <ul class="bl2" style="margin:0 0 10px">
+              <li><svg class="ic bi"><use href="#i-commit"/></svg>Baseline 대비 최대 <b>2.0%</b> TPS 오버헤드</li>
+              <li><svg class="ic bi"><use href="#i-commit"/></svg>eCapture·Zeek 대비 CPU·메모리 <b>4~5배</b> 효율</li>
+              <li><svg class="ic bi"><use href="#i-commit"/></svg>레거시 알고리즘(TLS 1.0, SSL 3.0, DES) 및 PQC 전환 대상 도출</li>
+            </ul>
+            <div class="tags"><span class="tag">eBPF</span><span class="tag">Go</span><span class="tag">TLS</span><span class="tag">PQC</span><span class="tag">공개 예정</span></div>
+          </div>
+
+          <div class="card">
+            <h4>CryptoFlex</h4>
+            <div class="cmeta">단국대 BoanLab · 2024. 11 – 2026. 08 · 기여도 100%</div>
+            <p>클라우드 데이터 플레인의 암호화 정책을 연결 중단 없이 전환하는 시스템. 라이브러리·CipherSuite·키 교환·서명 알고리즘·FIPS 모드를 런타임에 재바인딩합니다.</p>
+            <ul class="bl2" style="margin:0 0 10px">
+              <li><svg class="ic bi"><use href="#i-commit"/></svg>400개 서비스 기준 <b>0.6초</b> 내 정책 적용·전환</li>
+              <li><svg class="ic bi"><use href="#i-commit"/></svg>이슈 발생 시 <b>2.9초</b> 내 실시간 롤백</li>
+              <li><svg class="ic bi"><use href="#i-commit"/></svg>SPIFFE 기반 Secure Control Channel · Policy Validator</li>
+            </ul>
+            <div class="tags"><span class="tag">Crypto Agility</span><span class="tag">SPIFFE</span><span class="tag">OpenSSL</span><span class="tag">Kubernetes</span><span class="tag">공개 예정</span></div>
+          </div>
+
+          <div class="card">
+            <h4>TELEscope</h4>
+            <div class="cmeta">단국대 BoanLab · 2025</div>
+            <p>5G 코어 네트워크 대상 모의침투 시뮬레이션 및 보안 점검 프레임워크. 점검 시나리오를 YAML로 인벤토리화하여 자동 실행합니다.</p>
+            <div class="tags"><span class="tag">5G Core</span><span class="tag">Pentest</span><span class="tag">Python</span><span class="tag">APCC 2025</span><span class="tag">공개 예정</span></div>
+          </div>
+
+          <div class="card">
+            <h4>AWS Security Audit Solution</h4>
+            <div class="cmeta">S2W Inc. · 2022. 12 – 2023. 06 · 기여도 70%</div>
+            <p>AWS 리소스 보안 설정과 IAM 권한 구성을 자동 점검하는 콘솔형 진단 솔루션. 금융권 내부망 반입 제약을 고려해 AWSCLI + Python만으로 동작하도록 설계했습니다.</p>
+            <ul class="bl2" style="margin:0 0 10px">
+              <li><svg class="ic bi"><use href="#i-commit"/></svg><b>70개 리소스 / 623개 점검 항목</b></li>
+              <li><svg class="ic bi"><use href="#i-commit"/></svg>시나리오 기반 IAM 권한 과부여·권한상승·권한경계 점검</li>
+              <li><svg class="ic bi"><use href="#i-commit"/></svg>Terraform 기반 테스트베드 IaC 구성</li>
+            </ul>
+            <div class="tags"><span class="tag">AWS</span><span class="tag">Python</span><span class="tag">CSPM</span><span class="tag">Terraform</span></div>
+          </div>
+
+          <div class="card">
+            <h4>GCP Security Audit Solution</h4>
+            <div class="cmeta">S2W Inc. · 2023. 08 – 2024. 02 · 기여도 70%</div>
+            <p>Google Cloud 아키텍처 센터의 Best Practice를 재도식화해 카테고리별 보안 요소를 도출하고, 이를 점검 항목으로 자동화한 진단 솔루션.</p>
+            <ul class="bl2" style="margin:0 0 10px">
+              <li><svg class="ic bi"><use href="#i-commit"/></svg><b>24개 리소스 / 297개 점검 항목</b></li>
+              <li><svg class="ic bi"><use href="#i-commit"/></svg>비활성 리소스 API에 대한 통과·미흡 판정 기준 정의</li>
+            </ul>
+            <div class="tags"><span class="tag">GCP</span><span class="tag">Python</span><span class="tag">Compliance</span></div>
+          </div>
+
+          <div class="card">
+            <h4>Docker &amp; Kubernetes Exploit Research</h4>
+            <div class="cmeta">시큐놀로지랩 · S2W · 2020. 07 – 2024. 03 · 기여도 100%</div>
+            <p>컨테이너 환경의 탐색 가능한 취약 요소를 분석하고, 컨테이너 이스케이프 이후의 post-exploitation 및 공격 시나리오를 산출한 장기 연구.</p>
+            <div class="tags"><span class="tag">Kubernetes</span><span class="tag">Container Escape</span><span class="tag">CVE Chaining</span></div>
+          </div>
+
+        </div>
+
+        <details class="more">
+          <summary>초기 프로젝트 4건 더 보기</summary>
+          <div class="entry"><div class="ehead"><span class="txt">Stratos — 클라우드 특화 CTI 솔루션 기획 <small>(S2W, 기여도 70%)</small></span><time>2023. 05 – 2024. 02</time></div>
+            <div class="edesc">클라우드 인프라 내·외부 공격표면 탐색, 보안 감사 모니터링, 민감정보 탐색을 통합한 CTI 솔루션 기획·개발 참여</div></div>
+          <div class="entry"><div class="ehead"><span class="txt">Windows Research <small>(시큐놀로지랩, 기여도 60%)</small></span><time>2020. 02 – 2021. 08</time></div>
+            <div class="edesc">주요 벤더 안티바이러스 탐지 우회 요소 분석 및 Logical Bug 기반 권한상승 연구, 보안 모듈 개발 활용</div></div>
+          <div class="entry"><div class="ehead"><span class="txt">Comicmap <small>(개인 프로젝트)</small> — <a href="https://github.com/heizelnet/comicmap" target="_blank" rel="noopener">GitHub</a></span><time>2019. 12 – 2020. 01</time></div>
+            <div class="edesc">일본 코믹마켓 공식 개발자 등록 후 제작한 행사 가이드 Android 애플리케이션</div></div>
+          <div class="entry"><div class="ehead"><span class="txt">스미싱가드 <small>(교내 프로젝트, 기여도 60%)</small></span><time>2013. 08 – 2013. 10</time></div>
+            <div class="edesc">Android Notification 기능을 활용한 SMS·메신저 스미싱 차단 애플리케이션</div></div>
+        </details>
+      </section>
+
+      <section class="sec" id="publications">
+        <h2>Publications</h2>
+
+        <div class="entry">
+          <div class="ehead"><span class="txt"><svg class="ic"><use href="#i-doc"/></svg>CryptoFlex: Nondisruptive Rebinding of Cryptographic Implementation in Data Planes</span><time>Under review</time></div>
+          <div class="edesc">IEEE INFOCOM</div>
+        </div>
+        <div class="entry">
+          <div class="ehead"><span class="txt"><svg class="ic"><use href="#i-doc"/></svg>CalChas: eBPF-Based Cryptographic-Posture Management for Cloud-Native Services</span><time>Under review</time></div>
+          <div class="edesc">IEEE Transactions on Network and Service Management (TNSM)</div>
+        </div>
+        <div class="entry">
+          <div class="ehead"><span class="txt"><svg class="ic"><use href="#i-doc"/></svg><a href="https://sites.google.com/boanlab.com/lab/publication/domestic-publication" target="_blank" rel="noopener">멀티 클라우드 서비스 연결 기법의 비교 분석 및 한계 고찰</a></span><time>2026.</time></div>
+        </div>
+        <div class="entry">
+          <div class="ehead"><span class="txt"><svg class="ic"><use href="#i-doc"/></svg><a href="https://doi.org/10.34385/proc.97.W2-3-5" target="_blank" rel="noopener">TELEscope: A Security Assessment Framework for 5G Core Networks</a></span><time>2025.</time></div>
+          <div class="edesc">APCC 2025 · doi.org/10.34385/proc.97.W2-3-5</div>
+        </div>
+        <div class="entry">
+          <div class="ehead"><span class="txt"><svg class="ic"><use href="#i-doc"/></svg>AWS CloudTrail 로그 기반 IAM 권한 자동 최적화 프레임워크</span><time>2025.</time></div>
+          <div class="edesc">한국정보처리학회 ASK 2025</div>
+        </div>
+        <div class="entry">
+          <div class="ehead"><span class="txt"><svg class="ic"><use href="#i-doc"/></svg>Istio의 앰비언트 모드와 사이드카 모드: 운영 특성 및 성능에 대한 정량적 비교 연구</span><time>2025.</time></div>
+          <div class="edesc">한국정보처리학회 ASK 2025</div>
+        </div>
+        <div class="entry">
+          <div class="ehead"><span class="txt"><svg class="ic"><use href="#i-doc"/></svg><a href="https://di0zxmb8pwajl.cloudfront.net/kiisc/conference/mobisec2024/P-71.pdf" target="_blank" rel="noopener">Mitra: Real-time Behavior-based Anomaly Detection for Secure SSH Sessions</a></span><time>2024.</time></div>
+          <div class="edesc">MobiSec 2024 · <b>Best Paper Award</b></div>
+        </div>
+        <div class="entry">
+          <div class="ehead"><span class="txt"><svg class="ic"><use href="#i-doc"/></svg><a href="https://koreascience.kr/article/JAKO202426857778614.page" target="_blank" rel="noopener">쿠버네티스 컨테이너 네트워크 환경에 대한 보안성 분석</a></span><time>2024.</time></div>
+        </div>
+      </section>
+
+      <section class="sec" id="activities">
+        <h2>Activities</h2>
+
+        <div class="entry">
+          <div class="ehead"><span class="txt"><svg class="ic"><use href="#i-check"/></svg>한국정보기술연구원(KITRI) <b>Best of the Best</b> 멘토</span><time>2021. 07 – 2024. 03</time></div>
+          <div class="edesc">
+            과학기술정보통신부 주최 차세대 보안리더 양성 프로그램
+            <ul class="bl2" style="margin-top:6px">
+              <li><svg class="ic bi"><use href="#i-commit"/></svg>퍼블릭 클라우드(AWS·Azure·GCP) 취약점 분석 강의</li>
+              <li><svg class="ic bi"><use href="#i-commit"/></svg>Docker·Kubernetes 취약점 분석 강의 및 프로젝트 멘토링</li>
+              <li><svg class="ic bi"><use href="#i-commit"/></svg>10기 교육생팀 ‘구름빵’ <a href="https://groompang.github.io/2022/09/18/azure-escape/" target="_blank" rel="noopener">Azure Container Instance 이스케이프 취약점</a> 지도 <small>(Microsoft 버그바운티 $30,000)</small></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="ehead"><span class="txt"><svg class="ic"><use href="#i-check"/></svg>단국대학교 컴퓨터학부 Docker·Kubernetes 강의 조교</span><time>2024. 09 –</time></div>
+          <div class="edesc">학부생 대상 실습 강의 진행 및 교육 자료 제작</div>
+        </div>
+
+        <div class="entry">
+          <div class="ehead"><span class="txt"><svg class="ic"><use href="#i-mic"/></svg>국가정보원 주최 공공기관 정보보호 컨퍼런스 초청 발표</span><time>2023.</time></div>
+        </div>
+        <div class="entry">
+          <div class="ehead"><span class="txt"><svg class="ic"><use href="#i-mic"/></svg>NHN Cloud 초청 — 클라우드 ASM 방법론 소개</span><time>2023.</time></div>
+        </div>
+        <div class="entry">
+          <div class="ehead"><span class="txt"><svg class="ic"><use href="#i-mic"/></svg>TrendMicro CloudSec 발표</span><time>2022.</time></div>
+        </div>
+        <div class="entry">
+          <div class="ehead"><span class="txt"><svg class="ic"><use href="#i-mic"/></svg>AWS Korea 임직원 대상 — Cloud CTI 개념 및 CSP 1-day 취약점 사례 발표</span><time>2022.</time></div>
+        </div>
+
+        <details class="more">
+          <summary>보안 자문 · 초기 활동 6건 더 보기</summary>
+          <div class="entry"><div class="ehead"><span class="txt"><svg class="ic"><use href="#i-check"/></svg>신한지주 주관 클라우드 그룹 공통 표준 보안 자문</span><time>2023.</time></div>
+            <div class="edesc">감사 결과를 그룹 표준 체크리스트에 반영</div></div>
+          <div class="entry"><div class="ehead"><span class="txt"><svg class="ic"><use href="#i-check"/></svg>신한투자증권 AWS 감사 스크립트 개발 자문</span><time>2023.</time></div></div>
+          <div class="entry"><div class="ehead"><span class="txt"><svg class="ic"><use href="#i-check"/></svg>R사·K사 클라우드(AWS) 침해사고 분석 및 보안 아키텍처 자문</span><time>2023.</time></div></div>
+          <div class="entry"><div class="ehead"><span class="txt"><svg class="ic"><use href="#i-check"/></svg>스마트 주행도로 인프라·장비 보안 취약점 분석 자문</span><time>2022.</time></div></div>
+          <div class="entry"><div class="ehead"><span class="txt"><svg class="ic"><use href="#i-mic"/></svg>영남대학교 게임 컨퍼런스 발표 <small>(게임 보안)</small></span><time>2015.</time></div></div>
+          <div class="entry"><div class="ehead"><span class="txt"><svg class="ic"><use href="#i-check"/></svg>Just For Fun 3 CTF 문제 출제 <small>(Reversing_Damnida)</small></span><time>2015.</time></div></div>
+        </details>
+      </section>
+
+    </main>
+
+    <aside>
+      <section class="sec">
+        <h2>Focus Areas</h2>
+        <ul class="pills">
+          <li class="pill">#CloudNativeSecurity</li>
+          <li class="pill">#KubernetesSecurity</li>
+          <li class="pill">#IncidentResponse</li>
+          <li class="pill">#CryptoAgility</li>
+          <li class="pill">#5GSecurity</li>
+          <li class="pill">#CSPM</li>
+          <li class="pill">#CIEM</li>
+          <li class="pill">#eBPF</li>
+          <li class="pill">#PQC</li>
+          <li class="pill">#CTI</li>
+        </ul>
+      </section>
+
+      <section class="sec">
+        <h2>Tech Stack</h2>
+        <div class="stackgrp"><b>Cloud Platforms</b><ul class="pills"><li class="pill">AWS</li><li class="pill">GCP</li><li class="pill">Azure</li><li class="pill">NHN Cloud</li></ul></div>
+        <div class="stackgrp"><b>Container & Orchestration</b><ul class="pills"><li class="pill">Kubernetes</li><li class="pill">Docker</li><li class="pill">Envoy</li><li class="pill">SPIFFE</li><li class="pill">eBPF</li></ul></div>
+        <div class="stackgrp"><b>Cloud Security</b><ul class="pills"><li class="pill">CSPM</li><li class="pill">CIEM</li><li class="pill">ASM</li><li class="pill">CTI</li><li class="pill">IAM</li></ul></div>
+        <div class="stackgrp"><b>Cryptography</b><ul class="pills"><li class="pill">OpenSSL</li><li class="pill">BoringSSL</li><li class="pill">AWS-LC</li><li class="pill">GnuTLS</li><li class="pill">TLS 1.3</li><li class="pill">ML-KEM</li><li class="pill">ML-DSA</li></ul></div>
+        <div class="stackgrp"><b>Compliance & Standards</b><ul class="pills"><li class="pill">FIPS 140-3</li><li class="pill">CNSA 2.0</li><li class="pill">PCI DSS 4.0</li><li class="pill">FSBP</li></ul></div>
+        <div class="stackgrp"><b>Security Operations</b><ul class="pills"><li class="pill">Threat Modeling</li><li class="pill">Incident Response</li><li class="pill">Digital Forensics</li></ul></div>
+        <div class="stackgrp"><b>IaC & Automation</b><ul class="pills"><li class="pill">Terraform</li><li class="pill">Stratus Red Team</li></ul></div>
+        <div class="stackgrp"><b>Languages</b><ul class="pills"><li class="pill">Go</li><li class="pill">Python</li><li class="pill">C / C++</li><li class="pill">Java</li></ul></div>
+      </section>
+
+      <section class="sec">
+        <h2>Certifications</h2>
+        <div class="entry"><div class="ehead"><span class="txt"><svg class="ic"><use href="#i-badge"/></svg>CKA <small>Certified Kubernetes Administrator</small></span></div></div>
+        <div class="entry"><div class="ehead"><span class="txt"><svg class="ic"><use href="#i-badge"/></svg>CKS <small>Certified Kubernetes Security Specialist</small></span></div></div>
+        <div class="entry"><div class="ehead"><span class="txt"><svg class="ic"><use href="#i-badge"/></svg>네트워크 관리사 2급</span></div></div>
+        <div class="entry"><div class="ehead"><span class="txt"><svg class="ic"><use href="#i-badge"/></svg>컴퓨터활용능력 2급</span></div></div>
+        <div class="entry"><div class="ehead"><span class="txt"><svg class="ic"><use href="#i-badge"/></svg>OPIc IM2</span></div></div>
+      </section>
+
+      <section class="sec" id="awards">
+        <h2>Awards</h2>
+        <div class="award"><svg class="ic"><use href="#i-trophy"/></svg><div class="an">MobiSec 2024 Best Paper Award</div><div class="ad">국제논문컨퍼런스</div><div class="at">2024.</div></div>
+        <div class="award"><svg class="ic"><use href="#i-trophy"/></svg><div class="an">대학연합 Incognito CTF 3위</div><div class="ad">Team. LeaveCat</div><div class="at">2014.</div></div>
+        <div class="award"><svg class="ic"><use href="#i-trophy"/></svg><div class="an">가톨릭대 CAT Security CTF 4위</div><div class="ad">Team. LeaveRet</div><div class="at">2013.</div></div>
+        <div class="award"><svg class="ic"><use href="#i-trophy"/></svg><div class="an">교내 프로젝트 경진대회 2위</div><div class="ad">스미싱가드</div><div class="at">2013.</div></div>
+      </section>
+
+      <section class="sec">
+        <h2>Education</h2>
+        <div class="deg"><b>인공지능융합학과 석사과정</b><span>단국대학교 대학원 · BoanLab</span><time>2024. 09 – 2027. 02 (예정)</time></div>
+        <div class="deg"><b>컴퓨터 공학사</b><span>학점은행제</span><time>2023. 03 – 2024. 02</time></div>
+        <div class="deg"><b>Best of the Best 3기 <small>Top 30 수료</small></b><span>한국정보기술연구원 (KITRI)</span><time>2015. 02 – 2015. 07</time></div>
+        <div class="deg"><b>한국IT전문대학교</b><span></span><time>2012. 03 – 2014. 02</time></div>
+      </section>
+    </aside>
+    </div>
+
+  </div>
+</article>
+
+<div class="foot">Last updated 2026. 09. · 상세 경력기술서는 요청 시 제공해 드립니다.</div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

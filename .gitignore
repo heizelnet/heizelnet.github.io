@@ -1,0 +1,7 @@
+private/
+*.pdf.orig
+.DS_Store
+node_modules/
+preview.html
+build-preview.py
+mockup/
