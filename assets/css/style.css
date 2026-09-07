@@ -60,6 +60,7 @@ svg.ic{width:1em; height:1em; vertical-align:-.125em; flex:none}
   width:30px; height:30px; display:grid; place-items:center; cursor:pointer;
   background:transparent; border:1px solid var(--line); border-radius:6px; color:var(--ink3);
 }
+.iconbtn > svg{width:.95em; height:.95em}
 .iconbtn:hover{color:var(--accent); border-color:var(--accent)}
 
 /* ============ sheet ============ */
@@ -82,6 +83,7 @@ svg.ic{width:1em; height:1em; vertical-align:-.125em; flex:none}
 .links a{display:flex; align-items:center; gap:9px; color:var(--headink2)}
 .links a:hover{color:#fff; text-decoration:none}
 .links .sq{width:22px; height:22px; border-radius:3px; background:#fff; color:var(--head); display:grid; place-items:center; flex:none}
+.links .sq > svg{width:.82em; height:.82em}
 .stats{display:flex; flex-wrap:wrap; gap:0; margin:28px -40px 0; border-top:1px solid rgba(255,255,255,.12); background:rgba(0,0,0,.14)}
 .stat{flex:1 1 150px; padding:13px 40px; border-right:1px solid rgba(255,255,255,.08)}
 .stat:last-child{border-right:0}
@@ -130,7 +132,7 @@ svg.ic{width:1em; height:1em; vertical-align:-.125em; flex:none}
 .bl{margin:0}
 .bl > li{position:relative; margin-bottom:9px; color:var(--ink)}
 .bl > li{padding-left:24px}
-.bl > li > .bi{position:absolute; left:0; top:.34em; color:var(--ink3); font-size:.92em}
+.bl > li > .bi{position:absolute; left:0; top:.36em; width:1.25em; height:.95em; color:var(--ink3); font-size:.92em}
 /* 1단계 항목: 제목 + 우측 기간 (벤치마크 .resume-position-time-inline-end 대응) */
 .bl > li > .li-head{display:flex; align-items:baseline; gap:12px}
 .li-txt{flex:1 1 auto; min-width:0}
@@ -139,7 +141,7 @@ svg.ic{width:1em; height:1em; vertical-align:-.125em; flex:none}
 .bl2{margin-top:5px}
 .bl2 > li{position:relative; margin-bottom:3px; font-size:.875rem; color:var(--ink2)}
 .bl2 > li{padding-left:22px}
-.bl2 > li > .bi{position:absolute; left:0; top:.34em; color:var(--meta); font-size:.86em}
+.bl2 > li > .bi{position:absolute; left:0; top:.38em; width:1.25em; height:.95em; color:var(--meta); font-size:.86em}
 .bl3{margin-top:2px; padding-left:14px; font-size:.83rem; color:var(--ink3)}
 .bl3 > li{position:relative; padding-left:14px}
 .bl3 > li::before{content:"┗"; position:absolute; left:0; top:0; color:var(--meta); font-size:.78rem}
@@ -159,7 +161,7 @@ svg.ic{width:1em; height:1em; vertical-align:-.125em; flex:none}
 .entry:last-child{border-bottom:0}
 .ehead{display:flex; align-items:baseline; gap:10px}
 .ehead .txt{flex:1 1 auto; min-width:0; color:var(--ink); display:flex; gap:8px; align-items:baseline}
-.ehead .txt > svg{color:var(--meta); margin-top:.1em}
+.ehead .txt > svg{color:var(--meta); margin-top:.1em; width:1.1em; height:.95em}
 .ehead .txt small{color:var(--meta); font-weight:400}
 .ehead time{flex:none; font-size:.8rem; color:var(--meta); white-space:nowrap}
 .edesc{margin-top:4px; padding-left:22px; font-size:.86rem; color:var(--ink2)}
