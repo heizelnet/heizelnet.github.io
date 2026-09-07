@@ -174,8 +174,6 @@ aside .sec{margin-bottom:36px}
   padding:5px 11px; border-radius:99px; background:var(--chip); border:1px solid var(--chipbd);
   font-size:.78rem; font-weight:500; color:var(--ink);
 }
-.stackgrp{margin-bottom:13px}
-.stackgrp b{display:block; font-size:.72rem; letter-spacing:.09em; text-transform:uppercase; color:var(--meta); margin-bottom:6px}
 .award{position:relative; padding-left:24px; margin-bottom:13px}
 .award > svg{position:absolute; left:0; top:.28em; color:var(--meta)}
 .award .an{font-size:.87rem; color:var(--ink); font-weight:500}
