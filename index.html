@@ -284,81 +284,43 @@
       <section class="sec" id="projects">
         <h2>Projects</h2>
         <div class="cards">
-
           <div class="card">
-            <h4>CryptoNexus <small style="font-weight:400;color:var(--meta)">/ CalChas</small></h4>
-            <div class="cmeta">단국대 BoanLab · 2025. 11 – 2026. 08 · 기여도 100%</div>
-            <p>eBPF 기반 실시간 암호화 이벤트 관측 시스템. 컨테이너·호스트 구분 없이 In-Transit / At-Rest 암호화를 포착하고, PQC 알고리즘까지 식별합니다.</p>
-            <ul class="bl2" style="margin:0 0 10px">
-              <li><svg class="ic bi"><use href="#i-commit"/></svg>Baseline 대비 최대 <b>2.0%</b> TPS 오버헤드</li>
-              <li><svg class="ic bi"><use href="#i-commit"/></svg>eCapture·Zeek 대비 CPU·메모리 <b>4~5배</b> 효율</li>
-              <li><svg class="ic bi"><use href="#i-commit"/></svg>레거시 알고리즘(TLS 1.0, SSL 3.0, DES) 및 PQC 전환 대상 도출</li>
-            </ul>
+            <h4>CryptoNexus</h4>
+            <div class="cmeta">2025. 11 – 2026. 08</div>
+            <p>운영 중인 워크로드의 암호 사용 현황을 실시간으로 수집하는 eBPF 기반 관측 시스템. 컨테이너·호스트 구분 없이 통신·데이터 암호화 설정을 포착하고, 폐기 대상 알고리즘과 PQC 전환 대상을 식별합니다.</p>
             <div class="tags"><span class="tag">eBPF</span><span class="tag">Go</span><span class="tag">TLS</span><span class="tag">PQC</span><span class="tag">공개 예정</span></div>
           </div>
-
           <div class="card">
             <h4>CryptoFlex</h4>
-            <div class="cmeta">단국대 BoanLab · 2024. 11 – 2026. 08 · 기여도 100%</div>
-            <p>클라우드 데이터 플레인의 암호화 정책을 연결 중단 없이 전환하는 시스템. 라이브러리·CipherSuite·키 교환·서명 알고리즘·FIPS 모드를 런타임에 재바인딩합니다.</p>
-            <ul class="bl2" style="margin:0 0 10px">
-              <li><svg class="ic bi"><use href="#i-commit"/></svg>400개 서비스 기준 <b>0.6초</b> 내 정책 적용·전환</li>
-              <li><svg class="ic bi"><use href="#i-commit"/></svg>이슈 발생 시 <b>2.9초</b> 내 실시간 롤백</li>
-              <li><svg class="ic bi"><use href="#i-commit"/></svg>SPIFFE 기반 Secure Control Channel · Policy Validator</li>
-            </ul>
+            <div class="cmeta">2024. 11 – 2026. 08</div>
+            <p>클라우드 데이터 플레인의 암호 구현체를 서비스 중단 없이 교체하는 시스템. 워크로드별 정책으로 라이브러리·CipherSuite·키 교환·서명 알고리즘·FIPS 모드를 런타임에 재바인딩합니다.</p>
             <div class="tags"><span class="tag">Crypto Agility</span><span class="tag">SPIFFE</span><span class="tag">OpenSSL</span><span class="tag">Kubernetes</span><span class="tag">공개 예정</span></div>
           </div>
-
           <div class="card">
             <h4>TELEscope</h4>
-            <div class="cmeta">단국대 BoanLab · 2025</div>
-            <p>5G 코어 네트워크 대상 모의침투 시뮬레이션 및 보안 점검 프레임워크. 점검 시나리오를 YAML로 인벤토리화하여 자동 실행합니다.</p>
-            <div class="tags"><span class="tag">5G Core</span><span class="tag">Pentest</span><span class="tag">Python</span><span class="tag">APCC 2025</span><span class="tag">공개 예정</span></div>
+            <div class="cmeta">2025. 07 – 2025. 11</div>
+            <p>5G Core 제어평면을 대상으로 인증·인가 취약점을 자동 점검하는 프레임워크. 점검 시나리오를 YAML 템플릿으로 인벤토리화해 반복 실행하고, NF 토폴로지를 자동 수집해 점검 대상을 선정합니다.</p>
+            <div class="tags"><span class="tag">5G Core</span><span class="tag">Pentest</span><span class="tag">Python</span><span class="tag">APCC 2025</span></div>
           </div>
-
           <div class="card">
             <h4>AWS Security Audit Solution</h4>
-            <div class="cmeta">S2W Inc. · 2022. 12 – 2023. 06 · 기여도 70%</div>
-            <p>AWS 리소스 보안 설정과 IAM 권한 구성을 자동 점검하는 콘솔형 진단 솔루션. 금융권 내부망 반입 제약을 고려해 AWSCLI + Python만으로 동작하도록 설계했습니다.</p>
-            <ul class="bl2" style="margin:0 0 10px">
-              <li><svg class="ic bi"><use href="#i-commit"/></svg><b>70개 리소스 / 623개 점검 항목</b></li>
-              <li><svg class="ic bi"><use href="#i-commit"/></svg>시나리오 기반 IAM 권한 과부여·권한상승·권한경계 점검</li>
-              <li><svg class="ic bi"><use href="#i-commit"/></svg>Terraform 기반 테스트베드 IaC 구성</li>
-            </ul>
-            <div class="tags"><span class="tag">AWS</span><span class="tag">Python</span><span class="tag">CSPM</span><span class="tag">Terraform</span></div>
+            <div class="cmeta">2022. 12 – 2023. 06</div>
+            <p>AWS 리소스 보안 설정과 IAM 권한 구성을 자동 점검하는 콘솔형 진단 솔루션. 70개 리소스 623개 점검 항목을 정의하고, 금융권 내부망 반입 제약을 고려해 의존성을 최소화한 구조로 설계했습니다.</p>
+            <div class="tags"><span class="tag">AWS</span><span class="tag">CSPM</span><span class="tag">CIEM</span><span class="tag">Python</span><span class="tag">Terraform</span></div>
           </div>
-
           <div class="card">
             <h4>GCP Security Audit Solution</h4>
-            <div class="cmeta">S2W Inc. · 2023. 08 – 2024. 02 · 기여도 70%</div>
-            <p>Google Cloud 아키텍처 센터의 Best Practice를 재도식화해 카테고리별 보안 요소를 도출하고, 이를 점검 항목으로 자동화한 진단 솔루션.</p>
-            <ul class="bl2" style="margin:0 0 10px">
-              <li><svg class="ic bi"><use href="#i-commit"/></svg><b>24개 리소스 / 297개 점검 항목</b></li>
-              <li><svg class="ic bi"><use href="#i-commit"/></svg>비활성 리소스 API에 대한 통과·미흡 판정 기준 정의</li>
-            </ul>
-            <div class="tags"><span class="tag">GCP</span><span class="tag">Python</span><span class="tag">Compliance</span></div>
+            <div class="cmeta">2023. 08 – 2024. 02</div>
+            <p>Google Cloud 아키텍처 Best Practice를 재도식화해 보안 요소를 도출하고 점검 항목으로 자동화한 진단 솔루션. 24개 리소스 297개 항목을 정의하고, 비활성 리소스 API의 판정 기준을 수립했습니다.</p>
+            <div class="tags"><span class="tag">GCP</span><span class="tag">CSPM</span><span class="tag">Python</span><span class="tag">Compliance</span></div>
           </div>
-
           <div class="card">
-            <h4>Docker &amp; Kubernetes Exploit Research</h4>
-            <div class="cmeta">시큐놀로지랩 · S2W · 2020. 07 – 2024. 03 · 기여도 100%</div>
-            <p>컨테이너 환경의 탐색 가능한 취약 요소를 분석하고, 컨테이너 이스케이프 이후의 post-exploitation 및 공격 시나리오를 산출한 장기 연구.</p>
+            <h4>Docker & Kubernetes Exploit Research</h4>
+            <div class="cmeta">2020. 07 – 2024. 03</div>
+            <p>컨테이너 환경에서 탐색 가능한 취약 요소를 분석한 장기 연구. 컨테이너 이스케이프 이후의 post-exploitation 경로와 클러스터 장악 시나리오를 산출했습니다.</p>
             <div class="tags"><span class="tag">Kubernetes</span><span class="tag">Container Escape</span><span class="tag">CVE Chaining</span></div>
           </div>
-
         </div>
-
-        <details class="more">
-          <summary>초기 프로젝트 4건 더 보기</summary>
-          <div class="entry"><div class="ehead"><span class="txt">Stratos — 클라우드 특화 CTI 솔루션 기획 <small>(S2W, 기여도 70%)</small></span><time>2023. 05 – 2024. 02</time></div>
-            <div class="edesc">클라우드 인프라 내·외부 공격표면 탐색, 보안 감사 모니터링, 민감정보 탐색을 통합한 CTI 솔루션 기획·개발 참여</div></div>
-          <div class="entry"><div class="ehead"><span class="txt">Windows Research <small>(시큐놀로지랩, 기여도 60%)</small></span><time>2020. 02 – 2021. 08</time></div>
-            <div class="edesc">주요 벤더 안티바이러스 탐지 우회 요소 분석 및 Logical Bug 기반 권한상승 연구, 보안 모듈 개발 활용</div></div>
-          <div class="entry"><div class="ehead"><span class="txt">Comicmap <small>(개인 프로젝트)</small> — <a href="https://github.com/heizelnet/comicmap" target="_blank" rel="noopener">GitHub</a></span><time>2019. 12 – 2020. 01</time></div>
-            <div class="edesc">일본 코믹마켓 공식 개발자 등록 후 제작한 행사 가이드 Android 애플리케이션</div></div>
-          <div class="entry"><div class="ehead"><span class="txt">스미싱가드 <small>(교내 프로젝트, 기여도 60%)</small></span><time>2013. 08 – 2013. 10</time></div>
-            <div class="edesc">Android Notification 기능을 활용한 SMS·메신저 스미싱 차단 애플리케이션</div></div>
-        </details>
       </section>
 
       <section class="sec" id="publications">
