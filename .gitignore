@@ -5,3 +5,4 @@ node_modules/
 preview.html
 build-preview.py
 mockup/
+build-assets.py
