@@ -187,17 +187,53 @@ aside .sec{margin-bottom:36px}
 .foot{text-align:center; font-size:.76rem; color:var(--meta); padding:26px 0 0}
 
 /* ============ print ============ */
+@page{ margin: 14mm 12mm; }
+
 @media print{
-  .topbar,.foot,details.more>summary{display:none !important}
-  details.more[open],details.more{display:block}
-  details.more:not([open])>*:not(summary){display:block}
-  body{background:#fff; font-size:10.5pt}
-  .wrap{padding:0; max-width:100%}
-  .sheet{box-shadow:none; border-radius:0}
-  .sheet-head{-webkit-print-color-adjust:exact; print-color-adjust:exact}
-  .sheet-body{padding:22px}
-  .cols{grid-template-columns:1fr 260px; gap:26px}
-  .tl-item{break-inside:avoid}
-  .card{break-inside:avoid}
-  a{text-decoration:none}
+  /* 다크모드 상태로 인쇄해도 밝은 팔레트로 강제 */
+  :root, :root[data-theme="dark"], :root[data-theme="light"]{
+    --bg:#fff; --sheet:#fff;
+    --ink:#1f2530; --ink2:#333c4a; --ink3:#4a5666; --meta:#6b7686;
+    --line:#d9dee6; --rule:#9aa5b4; --chip:#f4f6f8; --chipbd:#cfd6df;
+    --head:#fff; --headink:#1f2530; --headink2:#4a5666;
+    --accent:#2b5f92; --accent-soft:#eef3f9; --shadow:none;
+  }
+  .topbar, .foot{ display:none !important }
+  body{ background:#fff; font-size:9.6pt; line-height:1.5 }
+  .wrap{ padding:0; max-width:100% }
+  .sheet{ box-shadow:none; border-radius:0 }
+  .sheet-body{ padding:0 }
+
+  /* 헤더: 배경 인쇄가 꺼져 있어도 읽히도록 흰 바탕 + 진한 글자 */
+  .sheet-head{ background:#fff; color:var(--ink); padding:0 0 10px; margin-bottom:16px;
+               border-bottom:2px solid var(--rule) }
+  .head-row{ gap:16px }
+  .who h1{ color:var(--ink); font-size:1.75rem; letter-spacing:.1rem }
+  .who .role{ color:var(--ink2); font-size:1.05rem }
+  .links{ gap:4px; font-size:.78rem }
+  .links a{ color:var(--ink2) }
+  .links .sq{ background:transparent; color:var(--ink3); width:auto; height:auto }
+
+  /* 2단 그리드 해제 — 그리드는 페이지 분할 시 빈 칸이 생긴다 */
+  .cols{ display:block }
+  aside{ margin-top:20px; padding-top:16px; border-top:1px solid var(--line) }
+  aside .sec{ margin-bottom:16px }
+
+  /* 분할 제어 */
+  .sec{ margin-bottom:20px }
+  .sec > h2{ break-after:avoid; page-break-after:avoid }
+  /* 회사 블록(.tl-item)은 크기가 커서 통째로 묶으면 앞 페이지가 절반 비므로 분할 허용 */
+  .tl-item{ break-inside:auto; page-break-inside:auto }
+  .org, .intro{ break-after:avoid; page-break-after:avoid }
+  .card, .entry, .deg, .award, .stackgrp,
+  .bl > li, .org, .intro{ break-inside:avoid; page-break-inside:avoid }
+  aside .sec{ break-inside:avoid; page-break-inside:avoid }
+  .summary p{ orphans:3; widows:3 }
+
+  /* 카드/칩 */
+  .cards{ grid-template-columns:1fr 1fr; gap:10px }
+  .card{ border-color:var(--line) }
+  .pill, .tag{ background:transparent; border-color:var(--chipbd) }
+
+  a{ text-decoration:none; color:inherit }
 }
