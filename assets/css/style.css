@@ -93,6 +93,10 @@ svg.ic{width:1em; height:1em; vertical-align:-.125em; flex:none}
 .summary p:last-child{margin:0}
 
 .cols{display:grid; grid-template-columns:minmax(0,1fr) 320px; gap:44px; align-items:start}
+/* 992~1139px: 2단은 유지하되 사이드바를 좁혀 본문 폭 확보 (줄바꿈 사각지대) */
+@media (max-width:1139px) and (min-width:992px){
+  .cols{grid-template-columns:minmax(0,1fr) 240px; gap:28px}
+}
 @media (max-width:991px){ .cols{grid-template-columns:1fr; gap:0} }
 @media (max-width:767px){
   .head-row{justify-content:center; gap:18px}
